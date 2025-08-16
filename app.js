@@ -3,7 +3,7 @@
 // Iterate through quote containers and mycard elements
 document.querySelectorAll(".quote-container-Mahesh-Technicals, .mycard, blockquote").forEach((blockquote) => {
   // Modify the text within the blockquote elements
-  let modifiedText = blockquote.innerText.split(",").join(",\n").split("।").join("|\n");
+  let modifiedText = blockquote.innerText.split("।").join("|\n");
 
   // Removes double quotes from the beginning and end of a string
   let fresh = modifiedText.replace(/^"|"$/g, "");
